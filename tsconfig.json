@@ -8,17 +8,22 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es5",
+    "target": "es6",
     "lib": [
-      "es2018",
-      "dom"
+      "es6",
+      "dom",
+      "es2015.promise"
     ]
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
     "fullTemplateTypeCheck": true
-  }
+  },
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }

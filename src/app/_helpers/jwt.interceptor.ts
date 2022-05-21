@@ -5,7 +5,9 @@ import { finalize } from "rxjs/operators";
 import { v4 as uuid } from 'uuid';
 import { environment } from "src/environments/environment";
 
-@Injectable()
+@Injectable({
+    providedIn: 'root'
+  })
 export class JwtInterceptor implements HttpInterceptor {
     public unique_request_id: string = "";
 

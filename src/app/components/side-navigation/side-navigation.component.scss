@@ -1,0 +1,40 @@
+.sidenav {
+    height: 100%;
+    width: 250px;
+    top: 50;
+    left: 0;
+}
+
+.clr-vertical-nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: .9rem;
+    width: 14rem;
+    min-width: 2.4rem;
+    background-color: #e9ecef;
+    will-change: width;
+    transition: width .2s ease-in-out;
+    margin-top: -20px;
+}
+
+.clr-vertical-nav .nav-group-text .clr-vertical-nav .nav-text {
+    font-size: 16px;
+}
+
+.clr-vertical-nav .nav-link {
+    height: 2.8rem;
+    color: #000;
+}
+
+.clr-vertical-nav>.nav-link, .clr-vertical-nav .nav-content>.nav-link {
+    background-color: #0072a3;
+    color: #fff;
+}
+
+.clr-vertical-nav .nav-link-active {
+    color: #fff;
+    background-color: #0072a3;
+}
+.clr-vertical-nav .nav-link-active .nav-icon {
+    fill: #fff;
+}
