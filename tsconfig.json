@@ -15,7 +15,7 @@
     "lib": [
       "es6",
       "dom",
-      "es2015.promise"
+      "ESNext"
     ]
   },
   "angularCompilerOptions": {
