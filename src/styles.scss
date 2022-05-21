@@ -1,0 +1,81 @@
+@import '~@angular/material/theming';
+@include mat-core();
+$Pythonfaq-primary: mat-palette($mat-indigo);
+$Pythonfaq-accent: mat-palette($mat-pink, A200, A100, A400);
+@import "~bootstrap/scss/bootstrap";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+$Pythonfaq-warn: mat-palette($mat-red);
+$Pythonfaq-theme: mat-light-theme($Pythonfaq-primary, $Pythonfaq-accent, $Pythonfaq-warn);
+@include angular-material-theme($Pythonfaq-theme);
+
+
+
+html
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+.jumbotron {
+    margin: 0px!important;
+    height: auto!important;
+    padding: 0px!important;
+    width: 100%!important;
+    background: transparent!important;
+}
+
+.close-button {
+    margin: 0px!important;
+    cursor: pointer;
+}
+
+.alert {
+    display: flow-root!important;
+}
+
+.alert.alert-danger {
+    color: #962121!important;
+}
+
+.main-container {
+    height: auto;
+}
+
+.fade {
+    opacity: 1 !important;
+}
+
+.modal-backdrop.show {
+    opacity: .8 !important;
+}
+
+.main-dialog .modal-content {
+    padding: 0px !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.main-container .content-container .clr-vertical-nav {
+    height: 100vh;
+}
+
+.clr-vertical-nav .nav-group-text, .clr-vertical-nav .nav-text {
+    padding-top: 10px !important;
+    margin-left: 6px;
+}
+
