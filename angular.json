@@ -71,7 +71,7 @@
               "namedChunks": false,
               "aot": false,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": false
             },
             "development": {
               "buildOptimizer": false,
