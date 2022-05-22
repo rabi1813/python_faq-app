@@ -12,7 +12,6 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSelectFilterModule} from 'mat-select-filter';
-import { BreadcrumbModule } from 'angular-crumbs';
 import { ToastrModule } from 'ngx-toastr';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
@@ -35,6 +34,15 @@ const routes: Routes = [
         },
         canActivate: [AuthGuard],
         component: HomePageComponent
+    },
+    {
+        path: 'home-page',
+        data: {
+            breadcrumb: 'Home',
+            title: 'Home page'
+        },
+        canActivate: [AuthGuard],
+        component: HomePageComponent
     }
 ];
 
@@ -51,7 +59,6 @@ const routes: Routes = [
         NgMultiSelectDropDownModule.forRoot(),
         ReactiveFormsModule,
         ToastrModule.forRoot(),
-        BreadcrumbModule,
         MatTableModule,
         MatSortModule,
         MatPaginatorModule,
