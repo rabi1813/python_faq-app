@@ -20,7 +20,8 @@
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
-    "fullTemplateTypeCheck": true
+    "fullTemplateTypeCheck": true,
+    "compilationMode": "full"
   },
   "exclude": [
     "dist",

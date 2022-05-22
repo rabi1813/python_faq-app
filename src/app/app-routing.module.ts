@@ -15,7 +15,7 @@ const routes: Routes = [
                     import('./components/home-page/home-page.module').then(m=> m.HomePageModule) 
             },
             {
-                path: '',
+                path: 'home-page',
                 data: {
                     title: "Home Page"
                 },
